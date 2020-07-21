@@ -1,11 +1,11 @@
 {
   "name": "@joellesenne/express-validation-error",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": false,
   "description": "Simple Middleware to manage exceptions within express error in asynchronous",
-  "main": "lib/ErrorResponse.js",
+  "main": "lib/ValidationError.js",
   "scripts": {
-    "test": "test/index.test.js"
+    "test": "mocha test/index.test.js"
   },
   "repository": {
     "type": "git",
@@ -30,9 +30,9 @@
   "devDependencies": {
     "babel-eslint": "^10.1.0",
     "chai": "^4.2.0",
-    "eslint": "^7.1.0",
-    "eslint-plugin-import": "^2.20.2",
-    "mocha": "^7.2.0"
+    "eslint": "^7.5.0",
+    "eslint-plugin-import": "^2.22.0",
+    "mocha": "^8.0.1"
   },
   "standard": {
     "globals": [
