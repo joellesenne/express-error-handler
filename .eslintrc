@@ -17,6 +17,6 @@
   },
   "parser": "babel-eslint",
   "parserOptions": {
-    "ecmaVersion": 2017
+    "ecmaVersion": 2020
   }
 }
