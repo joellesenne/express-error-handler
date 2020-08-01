@@ -71,9 +71,9 @@ const ErrorResponse = require('@joellesenne/express-validation-error')
 
 express.get('/', asyncHandler(async (req, res, next) => {
   const bar = await foo.findAll();
-	res.send(bar)
-	// Create errorHandler
-	if (!bar) {
+  res.send(bar)
+  // Create errorHandler
+  if (!bar) {
     return next(new ErrorResponse("No bar valid", 404));
   }
 }))
@@ -83,9 +83,9 @@ express.get('/', asyncHandler(async (req, res, next) => {
 
 👤 **Joël Lesenne &lt;contact@joellesenne.dev&gt;**
 
-- Twitter : [@joellesenne](https://twitter.com/joellesenne)
-- Github : [@joellesenne](https://github.com/joellesenne)
-- Codepen : [@joellesenne](https://codepen.io/joellesenne)
+– Twitter : [@joellesenne](https://twitter.com/joellesenne)
+– Github : [@joellesenne](https://github.com/joellesenne)
+– Codepen : [@joellesenne](https://codepen.io/joellesenne)
 
 ### 🏠 [Web Site](https://joellesenne.dev)!
 

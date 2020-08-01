@@ -1,49 +1,62 @@
 {
-  "name": "@joellesenne/express-validation-error",
-  "version": "1.0.1",
-  "private": false,
-  "description": "Simple Middleware to manage exceptions within express error in asynchronous",
-  "main": "lib/ValidationError.js",
-  "scripts": {
-    "test": "mocha test/index.test.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/joellesenne/express-validation-error.git"
-  },
-  "keywords": [
-    "Express",
-    "ValidationError",
-    "errorHandler",
-    "Mocha"
-  ],
-  "author": {
-    "name": "Joël Lesenne",
-    "email": "contact@joellesenne.dev",
-    "url": "https://joellesenne.dev"
-  },
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/joellesenne/express-validation-error/issues"
-  },
-  "homepage": "https://github.com/joellesenne/express-validation-error#readme",
-  "devDependencies": {
-    "babel-eslint": "^10.1.0",
-    "chai": "^4.2.0",
-    "eslint": "^7.5.0",
-    "eslint-plugin-import": "^2.22.0",
-    "mocha": "^8.0.1"
-  },
-  "standard": {
-    "globals": [
-      "describe",
-      "context",
-      "before",
-      "beforeEach",
-      "after",
-      "afterEach",
-      "it",
-      "expect"
-    ]
-  }
+    "name": "@joellesenne/express-validation-error",
+    "version": "1.0.2",
+    "private": false,
+    "description": "Simple Middleware to manage exceptions within express error in asynchronous",
+    "keywords": [
+        "Express",
+        "ValidationError",
+        "errorHandler",
+        "Mocha"
+    ],
+    "homepage": "https://github.com/joellesenne/express-validation-error#readme",
+    "bugs": {
+        "url": "https://github.com/joellesenne/express-validation-error/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/joellesenne/express-validation-error.git"
+    },
+    "license": "MIT",
+    "author": {
+        "name": "Joël Lesenne",
+        "email": "contact@joellesenne.dev",
+        "url": "https://joellesenne.dev"
+    },
+    "main": "lib/ValidationError.js",
+    "scripts": {
+        "test:mocha": "mocha test/index.test.js",
+        "prettier": "prettier --write 'lib/**/*.js'",
+        "prettier:onchange": "onchange 'lib/**/*.js' -- prettier --write {{changed}}"
+    },
+    "devDependencies": {
+        "babel-core": "^6.26.3",
+        "babel-eslint": "^10.1.0",
+        "babel-plugin-transform-runtime": "^6.23.0",
+        "babel-preset-env": "^1.7.0",
+        "chai": "^4.2.0",
+        "eslint": "^7.6.0",
+        "eslint-config-prettier": "^6.11.0",
+        "eslint-config-standard": "^14.1.1",
+        "eslint-plugin-import": "^2.22.0",
+        "eslint-plugin-node": "^11.1.0",
+        "eslint-plugin-prettier": "^3.1.4",
+        "eslint-plugin-promise": "^4.2.1",
+        "eslint-plugin-standard": "^4.0.1",
+        "mocha": "^8.1.0",
+        "onchange": "^7.0.2",
+        "prettier": "^2.0.5"
+    },
+    "standard": {
+        "globals": [
+            "describe",
+            "context",
+            "before",
+            "beforeEach",
+            "after",
+            "afterEach",
+            "it",
+            "expect"
+        ]
+    }
 }
