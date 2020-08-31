@@ -19,7 +19,7 @@
 
 >Simple Middleware to manage exceptions within express routes in asynchronous.
 
-👀 [Looking at my work]
+👀 \[Looking at my work]
 
 💡 [Inspiration]
 
@@ -28,7 +28,7 @@
 <a id="built"></a>
 
 ## 🛠 Built with
-- [@joellesenne/express-async-handler](@joellesenne/express-async-handler) - Simple Middleware to manage exceptions for Express
+- [@joellesenne/express-async-handler](https://github.com/joellesenne/express-async-handler) - Simple Middleware to manage exceptions for Express
 - [Mocha](https://mochajs.org/) - Test framework running on Node.js
 
 <a id="started"></a>
@@ -55,6 +55,7 @@ You will need [node.js](https://nodejs.org/en/) to run the software and see the 
 ```bash
 ~ $ npm install --save-dev @joellesenne/express-async-handler @joellesenne/express-error-handler
 ```
+
 or
 
 ```bash
@@ -67,14 +68,14 @@ or
 
 ```javascript
 const asyncHandler = require('@joellesenne/express-async-handler')
-const ErrorResponse = require('@joellesenne/express-validation-error')
+const ValidationError = require('@joellesenne/express-validation-error')
 
 express.get('/', asyncHandler(async (req, res, next) => {
   const bar = await foo.findAll();
   res.send(bar)
   // Create errorHandler
   if (!bar) {
-    return next(new ErrorResponse("No bar valid", 404));
+    return next(new ValidationError("No bar valid", 404));
   }
 }))
 ```
@@ -107,7 +108,7 @@ Copyright © 2020 [Joël Lesenne](https://github.com/joellesenne).
 
 This project is [MIT](LICENSE) licensed.
 
-[Looking at my work]: https://joellesenne.github.io/express-validation-error
+[Looking at my work]: <insert-a-valid-url>
 
 [Inspiration]: https://github.com/Kirbyasdf/NODE-2020/blob/master/utilities/ErrorResponse.js
 
