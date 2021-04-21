@@ -5,7 +5,8 @@ node_modules
 .git
 
 # IDE config
-.vscode
+.vscode/
+.idea/
 
 # OSX
 .DS_Store

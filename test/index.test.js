@@ -11,18 +11,18 @@
 /**
  * @load modules dependencies
  */
-const chai = require('chai');
+const chai = require('chai')
 
 /**
  * @load modules UTILS
  */
-const ValidationError = require('../lib/ValidationError');
+const ValidationError = require('../lib/ValidationError')
 
-const { expect } = chai;
+const { expect } = chai
 
 describe('ValidationError', () => {
   it('should catch exceptions of a function passed into it', async () => {
-    const error = new Error('catch me!');
-    expect(() => new ValidationError).not.to.throw(error);
-  });
-});
+    const error = new Error('catch me!')
+    expect(() => new ValidationError()).not.to.throw(error)
+  })
+})
